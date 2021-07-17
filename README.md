@@ -3,8 +3,8 @@ Building Multi Steps form in VueJS and Tailwind CSS
 
 Youtube video
 =============
-* PART 1 - Here is the youtube video for the walkthrough PART 1 [https://youtu.be/3nUDKZGQaNU](https://youtu.be/BXyHeuvBttc)
-* PART 2 - Here is the youtube video for the walkthrough PART 2 [https://youtu.be/xGYIC2M8Fmw](https://youtu.be/BXyHeuvBttc)
+* PART 1 - Here is the youtube video for the walkthrough PART 1 [https://youtu.be/3nUDKZGQaNU](https://youtu.be/3nUDKZGQaNU)
+* PART 2 - Here is the youtube video for the walkthrough PART 2 [https://youtu.be/xGYIC2M8Fmw](https://youtu.be/xGYIC2M8Fmw)
 
 VueJS
 ============
