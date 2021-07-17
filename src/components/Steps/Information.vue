@@ -10,6 +10,7 @@
         name="name"
         id="name"
         class="text-2xl p-2 border-2 rounded border-green-300 mt-4 mb-4"
+        @input="onChange"
       />
     </div>
     <div>
@@ -21,6 +22,7 @@
         name="dob"
         id="dob"
         class="text-2xl p-2 border-2 rounded border-green-300 mt-4 mb-4"
+        @input="onChange"
       />
     </div>
     <div>
@@ -31,6 +33,8 @@
         name="age"
         id="age"
         class="text-2xl p-2 border-2 rounded border-green-300 mt-4 mb-4"
+        v-bind:value="formValue.age"
+        @input="onChange"
       />
     </div>
     <div>
@@ -41,6 +45,8 @@
         name="email"
         id="email"
         class="text-2xl p-2 border-2 rounded border-green-300 mt-4 mb-4"
+        v-bind:value="formValue.email"
+        @input="onChange"
       />
     </div>
   </div>
@@ -55,6 +61,18 @@ export default {
       name: String,
       dob: String,
       age: Number,
+    }
+  },
+  emits: ['formValueChange'],
+  methods: {
+    onChange (e) {
+      this.$emit('formValueChange', {
+        label: 'information',
+        data: {
+          ...this.formValue,
+          [e.target.name]: e.target.value
+        }
+      })
     }
   }
 }
